@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<!-- Esto es el head donde van los metadatos, el título
+	y los enlaces a los archivos .css, para darle estilo a la página -->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Ruben Torres"/>
+		<meta name="description" content="mujeres historia informatica"/>
+		<title>Contacto | Las Mujeres en la Historia de la Informática</title>
+		<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+		<link rel="stylesheet" href="CSS/contacto.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<!-- Esto es el body, que es donde va la estructura visual 
+	principal del programa -->
+	<body>
+		<!-- Esto es un nav, que es la barra de navegación,
+		para cambiar de una página a otra -->
+		<nav>
+			<!-- Este es el logo, que cuando se pulsa, lleva a
+			la página principal -->
+			<a href="index.html">
+				<img src="img/logo.png">
+			</a>
+			<!-- Esta es la lista donde están los enlaces
+			a las demás páginas -->
+			<ul>
+				<li>
+					<a href="index.html">
+						<p>Inicio</p>
+					</a>
+				</li>
+				<li>
+					<a href="mujeres.html">
+						<p>Mujeres</p>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="selected">
+						<p>Contacto</p>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- Este es el main, que es donde irán todos los contenidos
+		de la página -->
+		<main>
+			<!-- Este es un section con estilo de una tarjeta
+			de contacto, que almacenará en el lado izquierdo
+			una tarjeta con información, y en el lado derecho
+			un formulario de contacto -->
+			<section>
+				<!-- Este es un section que contiene información
+				de contacto -->
+                <section class="info">
+                    <section class="info_title">
+                        <i class="fa fa-user-circle"></i>
+                        <h2>INFORMACIÓN<br/>DE CONTACTO</h2>
+                    </section> 
+                    <section class="info_items">
+                        <p><i class="fa fa-phone" aria-hidden="true"></i>678 543 921</p>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>C/ Corte de Peleas, 79</p>
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i>contacto@rubeninformatica.com</p>
+                    </section>                   
+                </section>
+				<!-- Este es el formulario que contiene inputs,
+				labels, textarea... Y sirve para que el usuario
+				escriba sus datos y los envíe -->
+                <form action="">
+                    <h2>Enviar mensaje</h2>
+                    <div class="user_info">
+                        <label for="name">Nombre <span>*</span></label>
+                        <input type="text" id="name" class="inputs"/>
+
+                        <label for="phone">Teléfono</label>
+                        <input type="text" id="phone" class="inputs"/>
+
+                        <label for="email">Correo electrónico <span>*</span></label>
+                        <input type="email" id="email" class="inputs"/>
+
+                        <label for="mensaje">Mensaje <span>*</span></label>
+                        <textarea id="mensaje" class="inputs"></textarea>
+
+						<div>
+							<input type="checkbox" id="checkbox"/>
+							<label for="checkbox">
+								Acepto la <a href="https://docs.google.com/document/d/1iepLUcJUnY6fm8Prx63hDC89X487iQmjMEDSQm5f3Pc/edit?ts=5ce268c6#" target="_blank">Política de Privacidad</a> <span>*</span>
+							</label>
+						</div>
+
+						<div class="button">
+                        	<input type="button" value="Enviar" id="btnSend">
+						</div>
+                    </div>
+                </form>
+            </section>
+		</main>
+		<!-- Este es el footer, situado en la zona más inferior de
+		la página, que es donde van los enlaces a la politica de privacidad, 
+		el aviso legal... -->
+		<footer>
+			<p>
+				&copy;2021 Todos los derechos reservados | <a href="https://fundacionloyola.com/vguadalupe/" target="_blank">
+				Escuela Virgen de Guadalupe</a> 
+			</p>
+			<p>
+				<a href="http://fundacionloyola.com/vguadalupe/aviso-legal/" target="_blank">Aviso Legal</a> 
+				| 
+				<a href="https://docs.google.com/document/d/1iepLUcJUnY6fm8Prx63hDC89X487iQmjMEDSQm5f3Pc/edit?ts=5ce268c6#" target="_blank">Política de Privacidad</a>
+			</p>
+		</footer>
+	</body>
+</html>
