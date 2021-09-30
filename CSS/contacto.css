@@ -1,0 +1,120 @@
+/*** Rubén Torres ***/
+
+body{
+	background: linear-gradient(#eabeff, white);
+    font-family: 'Arial';
+}
+
+/*** FORM ***/
+main > section{
+    width: 1050px;
+    margin: 150px auto;
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0px 0px 30px black;
+}
+
+/** INFO **/
+.info{
+    width: 35%;
+    padding: 40px;
+    background: #1e002c;
+    color: #f4dcff;
+    text-align: center;
+}
+
+.info_title,
+.info_items{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info_title > .fa-user-circle{
+    font-size: 100px;
+}
+
+.info_items{
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-left: 50px;
+}
+
+.info_items .fa{
+    width: 25px;
+}
+
+/** FORM **/
+form{
+    width: 65%;
+    padding: 40px;
+}
+
+form h2{
+    color: #570080;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.user_info{
+    display: flex;
+    flex-direction: column;
+}
+
+.user_info label{
+    font-size: 18px;
+}
+
+.user_info .inputs{
+    border: none;
+    border-bottom: 2px solid #570080;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.user_info .inputs:focus{
+    outline: none;
+}
+
+.user_info label span{
+    color: red;
+}
+
+.user_info a{
+    color: #7902b1;
+}
+
+.user_info a:hover{
+    color: #c23eff;
+}
+
+.button{
+    text-align: right;
+}
+
+/* input[type="button"] para seleccionar
+los inputs que sean tipo button */
+.user_info input[type="button"]{
+    /* Cursor pointer para que al pasar
+    el ratón por encima el ratón cambie
+    y tenga un estilo para que se vea 
+    que se puede pulsar sobre ese sitio */
+    width: 25%;
+    padding: 10px;
+    margin-top: 35px;
+    font-size: 18px;
+    background: #1e002c;
+    color: #f4dcff;
+    transition: ease-in 200ms;
+    cursor: pointer;
+}
+
+.user_info input[type="button"]:hover{
+    color: #1e002c;
+    background: #f4dcff;
+    transition: ease-in 200ms;
+}

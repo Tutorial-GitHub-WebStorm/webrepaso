@@ -1,0 +1,171 @@
+/*** Rubén Torres ***/
+
+body{
+	background: url('../img/background.jpg') no-repeat fixed center;
+	background-size: cover;
+	height: 1111px;
+}
+
+/*** BANNER ***/
+.banner{
+	/* La medida vh, sirve para asignar un tamaño en función de 
+	la resolución que se está cargando en el navegador.
+	En este caso, como quiero que el banner ocupe el 100%
+	del alto que se cargue, y por eso le pongo 100vh */
+	height: 100vh; 
+	width: 100%;
+    box-shadow: 0px 0px 30px black;	
+	background-image: url('../img/img3.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.bannertext{
+	/* He usado display flex para alinear los elementos
+	que le indique, y utilizo align-items para centrarlos, 
+	y justify-content para repartir el contenido */
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0,0,0,0.4);
+	color: white;
+	font-size: 45px;
+	text-align: center;
+}
+
+/*** SECTION 1 ***/
+
+.card{
+	background-color: rgb(251, 239, 255);
+	margin: 20px;
+	padding: 60px;
+	border-radius: 10px;
+	text-align: justify;
+	font-size: 18px;
+}
+
+.card > div{
+	margin: 20px;
+	width: 50%;
+}
+
+.card h1{	
+	font-size: 30px;
+	color: #570080;
+	margin-bottom: 10px;
+}
+
+.carddiv > div:first-child{
+	/* Añadir una imagen de fondo en al primer 
+	div	y ponerle un alto de 50vh (tamaño respecto
+	a la resolución que carga el navegador),
+	que cubra todo el div y que salga centrada*/
+	height: 50vh;
+	background-image: url('../img/img1.jpg');	
+	background-size: cover;
+	background-position: center;
+}
+
+/*** CONTAINER ***/
+.container,
+.container > .card,
+.carddiv{
+	display: flex;
+}
+
+.container > article{
+	width: 50%;
+}
+
+/** Primer article **/
+
+.container .card > div:first-child{
+	height: 50vh;
+	background-image: url('../img/Ada_lovelace.jpg');	
+	background-size: cover;
+	background-position: center;
+}
+
+.container .card > div:last-child{
+	/* El último div tiene un display flex
+	Una dirección en columna, para que se alinee
+	en forma vertical en vez de horizontal */
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container .card h1{
+	font-size: 50px;
+}
+
+.container .card a{
+	/* Esto son los botones que llevan a
+	las otras páginas que tienen border-radius
+	para redondear los bordes, box-shadow para 
+	darle un efecto de profundidad, aunque se suela
+	usar para dar sombreado, y un transition ease-in
+	para que la animación sea más lenta al principio
+	y más rápida al final, si utilizase ease-out, funcionaría
+	al revés */
+	padding: 20px;
+	border-radius: 30px;
+	background-color: #ebc0ff;
+    box-shadow: 0px 5px 0px 0px #570080;
+	color: #570080;
+	transition: ease-in 250ms;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.container .card  a:hover{
+	background-color: #8308bd;
+    box-shadow: 0px 5px 0px 0px #ebc0ff;
+	color: #ebc0ff;
+	transition: ease-in 250ms;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.container .card a:active{
+    box-shadow: 0px 1px 0px 0px #8308bd;
+	transition: ease-in 250ms;
+}
+
+.container .card span{
+	opacity: 0%;
+	transition: ease-in 250ms;
+	color: #ebc0ff;
+	margin-left: -10px;
+}
+
+.container .card a:hover span{
+	opacity: 100%;
+	transition: ease-in 250ms;
+	margin-left: 10px;
+}
+
+/** Segundo article **/
+.container .card:last-child{
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.container .card .fa{
+	font-size: 25px;
+}
+
+.container .card:last-child > div{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.container .card:last-child div > div{
+	width: 50%;
+	
+}

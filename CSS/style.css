@@ -1,0 +1,76 @@
+/*** Rubén Torres ***/
+
+/* El asterísco, es para darle un estilo
+universal, para todo, y lo que hago es
+quitar el margin y el padding que trae por
+defecto, le quito el estilo a las listas
+y asigno una fuente */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+}
+
+/*** NAVBAR ***/
+nav{
+	/* Aquí le doy estilo al navbar
+	poniéndolo fijo en pantalla, top 0
+	para que esté arriba del todo
+	display flex para alinear los elementos
+	y space-around para que se distribuyan
+	dejando el mismo espacio a la izquierda que
+	a la derecha */
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	font-size: 18px;
+    box-shadow: 0px 0px 30px black;
+	display: flex;
+	justify-content: space-around;
+	top: 0;
+}
+
+/* Logo */
+nav img{
+	width: 170px;
+}
+
+nav ul{
+	list-style-type: none;
+	display: flex;
+}
+
+nav ul a{
+	padding: 20px;
+    display: block;
+    border-bottom: 3px solid white;
+	color: #570080;
+}
+
+nav ul a:hover{
+    background-color: #f4dcff;
+    border-bottom: 3px solid #570080;
+}
+
+.selected{	
+    border-bottom-color: #570080;
+}
+
+/*** FOOTER ***/
+footer{
+	background-color: #2d2033;
+	color: #f4dcff;
+	display: flex;
+	justify-content: space-around;
+	padding: 25px;
+	font-size: 18px;
+}
+
+footer a{
+	color: #c851ff;
+}
+
+footer a:hover{
+	color: #e5acff;
+}
