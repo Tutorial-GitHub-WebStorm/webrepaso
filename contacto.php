@@ -36,7 +36,7 @@
         $titulo = 'Contacto | Las Mujeres en la Historia de la Informática';
         $css = 'contacto';
 
-        head($titulo, $css);
+        cabecera($titulo, $css);
 
     ?>
 	<!-- Esto es el body, que es donde va la estructura visual 

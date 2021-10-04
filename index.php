@@ -13,7 +13,7 @@
         $titulo = 'Inicio | Las Mujeres en la Historia de la Informática';
         $css = 'index';
 
-        head($titulo, $css);
+       cabecera($titulo, $css);
 
     ?>
 	<!-- Esto es el body, que es donde va la estructura visual 

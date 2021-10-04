@@ -1,6 +1,6 @@
 <?php
 
-    function head($titulo, $css){
+    function cabecera($titulo, $css){
         echo '<head>'.
                 '<meta charset="utf-8" />'.
                 '<meta name="author" content="Ruben Torres"/>'.
@@ -16,9 +16,9 @@
 
         //Variables
         $elementos = array(
-          'index',
-          'mujeres',
-          'contacto'
+          array('index', 'inicio'),
+          array('mujeres', 'mujeres'),
+          array('contacto', 'contacto')
         );
 
         echo '<nav>'.
@@ -27,17 +27,17 @@
                 '</a>'.
                 '<ul>';
                     foreach ($elementos as $elemento){
-                        if($elemento == $pagina){
+                        if($elemento[0] == $pagina){
                             echo '<li>'.
                                     '<a href="#.php" class="selected">'.
                                         //ucfirst = Upper Case First (Primera letra en mayúscula)
-                                        '<p>'.ucfirst($elemento).'</p>'.
+                                        '<p>'.ucfirst($elemento[1]).'</p>'.
                                     '</a>'.
                                 '</li>';
                         }else{
                             echo '<li>'.
-                                    '<a href="'.$elemento.'.php">' .
-                                        '<p>'.ucfirst($elemento).'</p>'.
+                                    '<a href="'.$elemento[0].'.php">' .
+                                        '<p>'.ucfirst($elemento[1]).'</p>'.
                                     '</a>'.
                                 '</li>';
                         }
